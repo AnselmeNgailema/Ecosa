@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EcoVert - Briques écologiques, charbon vert et produits issus du recyclage. Construire durable, vivre responsable.">
+<meta name="keywords" content="briques écologiques, charbon vert, économie circulaire, recyclage, construction durable, environnement">
+<meta property="og:title" content="EcoVert — Construire Durable">
+<meta property="og:description" content="Leader africain des matériaux de construction écologiques issus du recyclage.">
+<title>EcoVert — Construire Durable, Vivre Responsable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green-50: #f0faf2;
+  --green-100: #d6f2dc;
+  --green-200: #a8e4b4;
+  --green-400: #4abe6a;
+  --green-600: #1e8c3a;
+  --green-700: #166b2c;
+  --green-800: #0e4d1e;
+  --green-900: #072e11;
+  --earth-50: #faf6f0;
+  --earth-100: #f0e8d6;
+  --earth-400: #c4996a;
+  --earth-600: #8c5e2e;
+  --earth-800: #4d3018;
+  --dark: #0a1a0d;
+  --white: #ffffff;
+  --gray-50: #f8f9f8;
+  --gray-100: #e8ebe8;
+  --gray-300: #b0b8b0;
+  --gray-500: #6a756a;
+  --gray-700: #3a443a;
+  --shadow-sm: 0 1px 3px rgba(10,26,13,.08);
+  --shadow-md: 0 4px 16px rgba(10,26,13,.12);
+  --shadow-lg: 0 12px 40px rgba(10,26,13,.16);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--dark);background:#fff;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font-family:var(--font-body);border:none;background:none}
+
+/* UTILITIES */
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.container-wide{max-width:1440px;margin:0 auto;padding:0 2rem}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.badge{display:inline-block;padding:.25rem .75rem;border-radius:99px;font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.badge-green{background:var(--green-100);color:var(--green-700)}
+.badge-earth{background:var(--earth-100);color:var(--earth-600)}
+.section-label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green-600);margin-bottom:.75rem}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:700;line-height:1.15;color:var(--dark)}
+.section-title em{font-style:italic;color:var(--green-600)}
+.section-subtitle{font-size:1.1rem;color:var(--gray-500);margin-top:1rem;max-width:560px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.75rem;border-radius:99px;font-size:.95rem;font-weight:600;transition:all .2s;cursor:pointer}
+.btn-primary{background:var(--green-600);color:#fff}
+.btn-primary:hover{background:var(--green-700);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.btn-outline{border:2px solid var(--green-600);color:var(--green-600)}
+.btn-outline:hover{background:var(--green-50)}
+.btn-white{background:#fff;color:var(--green-800)}
+.btn-white:hover{background:var(--green-50)}
+.btn-sm{padding:.5rem 1.25rem;font-size:.85rem}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.text-center{text-align:center}
+.mt-1{margin-top:.5rem}.mt-2{margin-top:1rem}.mt-3{margin-top:1.5rem}.mt-4{margin-top:2rem}
+.hidden{display:none!important}
+.card{background:#fff;border-radius:var(--radius-md);box-shadow:var(--shadow-sm);border:1px solid var(--gray-100);overflow:hidden;transition:all .3s}
+.card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+
+/* OVERLAY / MODAL */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(4px)}
+.modal{background:#fff;border-radius:var(--radius-lg);max-width:600px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:var(--shadow-lg)}
+.modal-header{padding:1.5rem 1.75rem 1rem;border-bottom:1px solid var(--gray-100);display:flex;justify-content:space-between;align-items:center}
+.modal-header h3{font-family:var(--font-display);font-size:1.4rem;color:var(--dark)}
+.modal-body{padding:1.5rem 1.75rem}
+.modal-close{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gray-500);background:var(--gray-50);transition:.2s;font-size:1.2rem}
+.modal-close:hover{background:var(--gray-100);color:var(--dark)}
+
+/* FORMS */
+.form-group{margin-bottom:1.25rem}
+.form-label{display:block;font-size:.875rem;font-weight:600;color:var(--gray-700);margin-bottom:.4rem}
+.form-label span{color:#e24b4a;margin-left:2px}
+.form-input,.form-select,.form-textarea{width:100%;padding:.7rem 1rem;border:1.5px solid var(--gray-100);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.95rem;color:var(--dark);background:#fff;transition:border-color .2s,box-shadow .2s;outline:none}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--green-400);box-shadow:0 0 0 3px rgba(74,190,106,.12)}
+.form-textarea{resize:vertical;min-height:100px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-hint{font-size:.8rem;color:var(--gray-500);margin-top:.3rem}
+
+/* TOAST */
+.toast-container{position:fixed;top:1.25rem;right:1.25rem;z-index:9999;display:flex;flex-direction:column;gap:.5rem}
+.toast{padding:.875rem 1.25rem;border-radius:var(--radius-md);color:#fff;font-size:.9rem;font-weight:500;min-width:280px;box-shadow:var(--shadow-md);animation:slideIn .3s ease;display:flex;align-items:center;gap:.75rem}
+.toast-success{background:var(--green-700)}
+.toast-error{background:#a32d2d}
+.toast-info{background:#185fa5}
+@keyframes slideIn{from{transform:translateX(110%);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes fadeOut{to{opacity:0;transform:translateX(110%)}}
+
+/* NAV */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:900;transition:all .3s;padding:1rem 0}
+#navbar.scrolled{background:rgba(255,255,255,.97);backdrop-filter:blur(12px);box-shadow:var(--shadow-sm);padding:.65rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav-logo{font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:.5rem}
+.nav-logo .logo-mark{width:36px;height:36px;background:var(--green-600);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem}
+#navbar.scrolled .nav-logo{color:var(--dark)}
+.nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
+.nav-links a{padding:.5rem .875rem;border-radius:99px;font-size:.9rem;font-weight:500;color:rgba(255,255,255,.85);transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.15)}
+#navbar.scrolled .nav-links a{color:var(--gray-700)}
+#navbar.scrolled .nav-links a:hover,#navbar.scrolled .nav-links a.active{color:var(--green-700);background:var(--green-50)}
+.nav-cta{display:flex;align-items:center;gap:.75rem}
+.nav-btn-login{padding:.45rem 1.1rem;border-radius:99px;font-size:.85rem;font-weight:600;border:1.5px solid rgba(255,255,255,.5);color:#fff;transition:.2s}
+.nav-btn-login:hover{background:rgba(255,255,255,.15);border-color:#fff}
+#navbar.scrolled .nav-btn-login{border-color:var(--green-600);color:var(--green-600)}
+#navbar.scrolled .nav-btn-login:hover{background:var(--green-50)}
+.nav-btn-main{padding:.45rem 1.25rem;border-radius:99px;font-size:.85rem;font-weight:600;background:var(--green-600);color:#fff;transition:.2s}
+.nav-btn-main:hover{background:var(--green-700)}
+#navbar:not(.scrolled) .nav-btn-main{background:#fff;color:var(--green-800)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:.5rem;cursor:pointer}
+.hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+#navbar.scrolled .hamburger span{background:var(--dark)}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(7,46,17,.97);z-index:950;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--font-display);font-size:2rem;color:#fff;font-weight:700;opacity:.85;transition:.2s}
+.mobile-menu a:hover{opacity:1;color:var(--green-200)}
+.mobile-close{position:absolute;top:1.5rem;right:1.5rem;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.1);border-radius:50%;color:#fff;font-size:1.5rem;cursor:pointer}
+
+/* HERO */
+#hero{min-height:100vh;background:linear-gradient(160deg,var(--green-900) 0%,var(--green-800) 40%,#1a5c2a 100%);position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-bg-pattern{position:absolute;inset:0;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M30 0l30 52H0L30 0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.hero-content{position:relative;z-index:2;padding:8rem 0 5rem}
+.hero-eyebrow{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem}
+.hero-eyebrow-line{width:40px;height:2px;background:var(--green-400)}
+.hero-eyebrow span{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green-200)}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.8rem,6vw,5.2rem);font-weight:700;color:#fff;line-height:1.08;margin-bottom:1.5rem}
+.hero-title .accent{color:var(--green-400)}
+.hero-title .italic{font-style:italic;font-weight:400}
+.hero-desc{font-size:1.15rem;color:rgba(255,255,255,.75);max-width:500px;margin-bottom:2.5rem;line-height:1.7}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-stats{display:flex;gap:2.5rem;margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.12)}
+.hero-stat-number{font-family:var(--font-display);font-size:2rem;font-weight:700;color:#fff}
+.hero-stat-label{font-size:.8rem;color:rgba(255,255,255,.55);margin-top:.2rem}
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center}
+.hero-card-stack{position:relative;width:100%;max-width:440px;margin:0 auto}
+.hero-main-card{background:rgba(255,255,255,.08);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius-lg);padding:2rem;position:relative;z-index:2}
+.hero-card-img{width:100%;height:220px;object-fit:cover;border-radius:var(--radius-md);margin-bottom:1.25rem;background:linear-gradient(135deg,var(--green-700),var(--green-500));display:flex;align-items:center;justify-content:center;font-size:5rem}
+.hero-card-badge{position:absolute;top:1.5rem;right:1.5rem;background:var(--green-400);color:var(--green-900);border-radius:99px;padding:.3rem .9rem;font-size:.75rem;font-weight:700}
+.hero-card-title{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:.3rem}
+.hero-card-sub{font-size:.875rem;color:rgba(255,255,255,.6)}
+.hero-card-back{position:absolute;top:-24px;left:-20px;right:-20px;bottom:-8px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg);z-index:1}
+
+/* ABOUT / MISSION */
+#about{padding:7rem 0;background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.about-image-block{position:relative}
+.about-main-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);background:linear-gradient(135deg,var(--green-800),var(--green-600));display:flex;align-items:center;justify-content:center;font-size:6rem;overflow:hidden}
+.about-img-badge{position:absolute;bottom:-1.5rem;right:-1.5rem;background:#fff;border-radius:var(--radius-md);padding:1.25rem 1.5rem;box-shadow:var(--shadow-lg);text-align:center}
+.about-img-badge .big{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green-700)}
+.about-img-badge .small{font-size:.8rem;color:var(--gray-500);margin-top:.1rem}
+.about-features{display:flex;flex-direction:column;gap:1.25rem;margin-top:2rem}
+.about-feature{display:flex;gap:1rem;align-items:flex-start}
+.about-feature-icon{width:44px;height:44px;border-radius:var(--radius-sm);background:var(--green-50);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.about-feature-title{font-weight:600;color:var(--dark);margin-bottom:.2rem}
+.about-feature-desc{font-size:.875rem;color:var(--gray-500)}
+
+/* IMPACT NUMBERS */
+#impact{padding:5rem 0;background:var(--green-900)}
+.impact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;text-align:center}
+.impact-item{}
+.impact-number{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:700;color:#fff;line-height:1}
+.impact-unit{color:var(--green-400);font-size:.7em}
+.impact-label{font-size:.875rem;color:rgba(255,255,255,.55);margin-top:.5rem}
+
+/* PRODUCTS */
+#products{padding:7rem 0;background:var(--gray-50)}
+.products-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3rem;gap:1rem;flex-wrap:wrap}
+.search-filter{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.search-box{position:relative}
+.search-box input{padding:.6rem 1rem .6rem 2.5rem;border:1.5px solid var(--gray-100);border-radius:99px;font-size:.9rem;width:240px;outline:none;background:#fff;transition:.2s}
+.search-box input:focus{border-color:var(--green-400);width:280px}
+.search-box::before{content:'🔍';position:absolute;left:.85rem;top:50%;transform:translateY(-50%);font-size:.8rem}
+.filter-tabs{display:flex;gap:.5rem;flex-wrap:wrap}
+.filter-tab{padding:.45rem 1rem;border-radius:99px;font-size:.8rem;font-weight:600;border:1.5px solid var(--gray-100);color:var(--gray-500);background:#fff;cursor:pointer;transition:.2s}
+.filter-tab.active,.filter-tab:hover{border-color:var(--green-600);color:var(--green-700);background:var(--green-50)}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.75rem}
+.product-card{background:#fff;border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--gray-100);transition:all .3s;cursor:pointer}
+.product-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px)}
+.product-img{aspect-ratio:16/10;background:linear-gradient(135deg,#e0f2e6,#b8dfc4);display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative;overflow:hidden}
+.product-img img{width:100%;height:100%;object-fit:cover}
+.product-badge{position:absolute;top:.75rem;left:.75rem}
+.product-body{padding:1.25rem}
+.product-category{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--green-600);margin-bottom:.4rem}
+.product-name{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--dark);margin-bottom:.4rem}
+.product-desc{font-size:.85rem;color:var(--gray-500);line-height:1.5;margin-bottom:1rem}
+.product-footer{display:flex;justify-content:space-between;align-items:center}
+.product-price{font-family:var(--font-display);font-size:1.25rem;font-weight:700;color:var(--green-700)}
+.product-price .unit{font-size:.7rem;font-weight:400;color:var(--gray-500);font-family:var(--font-body)}
+.btn-order{padding:.5rem 1.25rem;border-radius:99px;font-size:.8rem;font-weight:600;background:var(--green-600);color:#fff;transition:.2s}
+.btn-order:hover{background:var(--green-700)}
+.products-empty{text-align:center;padding:4rem 2rem;color:var(--gray-500)}
+
+/* PROCESS */
+#process{padding:7rem 0;background:#fff}
+.process-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;margin-top:3.5rem;position:relative}
+.process-step{text-align:center;position:relative}
+.step-num{width:56px;height:56px;border-radius:50%;background:var(--green-600);color:#fff;font-family:var(--font-display);font-size:1.3rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;position:relative;z-index:1}
+.step-icon{font-size:1.5rem;margin-bottom:1rem}
+.step-title{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:.5rem}
+.step-desc{font-size:.875rem;color:var(--gray-500);line-height:1.6}
+
+/* TESTIMONIALS */
+#testimonials{padding:7rem 0;background:var(--green-50)}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
+.testimonial-card{background:#fff;border-radius:var(--radius-md);padding:2rem;box-shadow:var(--shadow-sm)}
+.testimonial-stars{color:#f0a500;font-size:1rem;margin-bottom:.75rem}
+.testimonial-text{font-size:.95rem;color:var(--gray-700);line-height:1.7;font-style:italic;margin-bottom:1.5rem}
+.testimonial-author{display:flex;align-items:center;gap:.75rem}
+.testimonial-avatar{width:44px;height:44px;border-radius:50%;background:var(--green-200);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--green-800)}
+.testimonial-name{font-weight:600;font-size:.9rem;color:var(--dark)}
+.testimonial-role{font-size:.8rem;color:var(--gray-500)}
+
+/* BLOG */
+#blog{padding:7rem 0;background:#fff}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem;margin-top:3rem}
+.blog-card{border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--gray-100);box-shadow:var(--shadow-sm);transition:.3s}
+.blog-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.blog-img{aspect-ratio:16/9;background:var(--green-100);display:flex;align-items:center;justify-content:center;font-size:3rem}
+.blog-body{padding:1.5rem;background:#fff}
+.blog-meta{display:flex;gap:1rem;align-items:center;margin-bottom:.75rem}
+.blog-date{font-size:.8rem;color:var(--gray-500)}
+.blog-title{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--dark);margin-bottom:.5rem;line-height:1.3}
+.blog-excerpt{font-size:.875rem;color:var(--gray-500);line-height:1.6;margin-bottom:1rem}
+.blog-read-more{font-size:.85rem;font-weight:600;color:var(--green-600);display:flex;align-items:center;gap:.3rem}
+
+/* CONTACT */
+#contact{padding:7rem 0;background:var(--gray-50)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start}
+.contact-info h2{font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--dark);margin-bottom:1rem}
+.contact-info p{color:var(--gray-500);margin-bottom:2rem}
+.contact-items{display:flex;flex-direction:column;gap:1.25rem}
+.contact-item{display:flex;gap:1rem;align-items:flex-start}
+.contact-item-icon{width:48px;height:48px;border-radius:var(--radius-md);background:var(--green-100);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.contact-item-label{font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500);margin-bottom:.2rem}
+.contact-item-val{font-weight:600;color:var(--dark)}
+.contact-form-card{background:#fff;border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-md)}
+.contact-form-title{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--dark);margin-bottom:.5rem}
+.contact-form-sub{font-size:.9rem;color:var(--gray-500);margin-bottom:1.75rem}
+
+/* FOOTER */
+footer{background:var(--green-900);color:#fff;padding:5rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:4rem}
+.footer-brand p{font-size:.9rem;color:rgba(255,255,255,.55);margin-top:1rem;max-width:280px;line-height:1.7}
+.footer-social{display:flex;gap:.75rem;margin-top:1.5rem}
+.social-btn{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:1rem;color:rgba(255,255,255,.7);transition:.2s}
+.social-btn:hover{background:var(--green-600);color:#fff;border-color:var(--green-600)}
+.footer-col h4{font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1.25rem}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.footer-col ul li a{font-size:.9rem;color:rgba(255,255,255,.65);transition:.2s}
+.footer-col ul li a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.footer-bottom p{font-size:.8rem;color:rgba(255,255,255,.35)}
+.footer-badge{display:flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:99px;padding:.4rem 1rem;font-size:.75rem;color:rgba(255,255,255,.45)}
+.footer-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--green-400)}
+
+/* AUTH PAGES */
+#page-login,#page-register,#page-dashboard,#page-admin,#page-product-detail,#page-blog-single{display:none;padding:6rem 0 4rem}
+#page-login.active,#page-register.active,#page-dashboard.active,#page-admin.active,#page-product-detail.active,#page-blog-single.active{display:block}
+
+/* ORDER MODAL SPECIFICS */
+.order-product-preview{display:flex;gap:1rem;align-items:center;padding:1rem;background:var(--green-50);border-radius:var(--radius-md);margin-bottom:1.5rem;border:1px solid var(--green-100)}
+.order-product-icon{font-size:2rem;width:52px;height:52px;background:var(--green-100);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center}
+.order-product-name{font-family:var(--font-display);font-weight:700;color:var(--dark)}
+.order-product-price{font-size:.9rem;color:var(--green-600);font-weight:600}
+
+/* DASHBOARD */
+.dashboard-header{background:linear-gradient(135deg,var(--green-900),var(--green-700));color:#fff;padding:3rem 0 2rem;border-radius:0 0 var(--radius-xl) var(--radius-xl);margin-bottom:2rem}
+.dash-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:2rem}
+.dash-stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-md);padding:1.25rem;text-align:center}
+.dash-stat-num{font-family:var(--font-display);font-size:2rem;font-weight:700;color:#fff}
+.dash-stat-label{font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.25rem}
+.dashboard-tabs{display:flex;gap:.5rem;margin-bottom:2rem;border-bottom:1px solid var(--gray-100);padding-bottom:.5rem;overflow-x:auto}
+.dash-tab{padding:.6rem 1.25rem;border-radius:var(--radius-sm) var(--radius-sm) 0 0;font-size:.875rem;font-weight:600;color:var(--gray-500);transition:.2s;white-space:nowrap;border-bottom:2px solid transparent}
+.dash-tab.active{color:var(--green-700);border-bottom-color:var(--green-600)}
+.dash-tab:hover:not(.active){color:var(--gray-700)}
+.dash-section{display:none}
+.dash-section.active{display:block}
+.data-table{width:100%;border-collapse:collapse;font-size:.875rem}
+.data-table th{text-align:left;padding:.75rem 1rem;background:var(--gray-50);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500);border-bottom:1px solid var(--gray-100)}
+.data-table td{padding:.875rem 1rem;border-bottom:1px solid var(--gray-100);color:var(--gray-700)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr:hover td{background:var(--gray-50)}
+.status-badge{padding:.25rem .7rem;border-radius:99px;font-size:.75rem;font-weight:600}
+.status-pending{background:#fef3cd;color:#856404}
+.status-confirmed{background:var(--green-100);color:var(--green-700)}
+.status-delivered{background:#cff4fc;color:#0c5460}
+.status-cancelled{background:#f8d7da;color:#721c24}
+.table-actions{display:flex;gap:.5rem}
+.tbl-btn{padding:.35rem .75rem;border-radius:var(--radius-sm);font-size:.75rem;font-weight:600;transition:.2s}
+.tbl-btn-view{background:var(--green-50);color:var(--green-700)}
+.tbl-btn-edit{background:#e7f3ff;color:#185fa5}
+.tbl-btn-del{background:#f8d7da;color:#721c24}
+.add-product-form{background:#fff;border-radius:var(--radius-md);padding:2rem;border:1px solid var(--gray-100)}
+
+/* PRODUCT DETAIL PAGE */
+.product-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.product-detail-img{aspect-ratio:1;background:var(--green-100);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:8rem}
+.product-detail-category{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green-600);margin-bottom:.5rem}
+.product-detail-title{font-family:var(--font-display);font-size:2.2rem;font-weight:700;color:var(--dark);margin-bottom:.5rem;line-height:1.2}
+.product-detail-price{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green-700);margin:.75rem 0}
+.product-detail-desc{color:var(--gray-500);line-height:1.75;margin-bottom:1.5rem}
+.product-specs{background:var(--gray-50);border-radius:var(--radius-md);padding:1.25rem;margin-bottom:1.5rem}
+.product-spec-row{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--gray-100);font-size:.9rem}
+.product-spec-row:last-child{border-bottom:none}
+.spec-key{color:var(--gray-500)}
+.spec-val{font-weight:600;color:var(--dark)}
+
+/* ANIMATIONS */
+.fade-in{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.fade-in.visible{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .about-grid,.contact-grid,.product-detail-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .hero-visual{display:none}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .hero-stats{gap:1.5rem}
+  .footer-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .products-header{flex-direction:column;align-items:flex-start}
+  .dashboard-tabs{flex-wrap:nowrap}
+}
+@media(max-width:480px){
+  .modal{max-height:100vh;border-radius:var(--radius-lg) var(--radius-lg) 0 0;align-self:flex-end}
+  .hero-actions{flex-direction:column}
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float{position:fixed;bottom:2rem;right:2rem;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);z-index:800;font-size:1.6rem;cursor:pointer;transition:.3s;text-decoration:none}
+.whatsapp-float:hover{transform:scale(1.1)}
+</style>
+</head>
+<body>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/+236XXXXXXXX" class="whatsapp-float" target="_blank" title="Nous contacter sur WhatsApp">📱</a>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+  <a href="#" onclick="navigate('home');closeMobileMenu()">Accueil</a>
+  <a href="#" onclick="navigate('about');closeMobileMenu()">À propos</a>
+  <a href="#" onclick="navigate('products');closeMobileMenu()">Produits</a>
+  <a href="#" onclick="navigate('blog');closeMobileMenu()">Blog</a>
+  <a href="#" onclick="navigate('contact');closeMobileMenu()">Contact</a>
+  <a href="#" onclick="showLoginModal();closeMobileMenu()" style="color:var(--green-300)">Connexion</a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" onclick="navigate('home')" class="nav-logo">
+        <div class="logo-mark">🌿</div>
+        EcoVert
+      </a>
+      <ul class="nav-links">
+        <li><a href="#" onclick="navigate('home')" class="active">Accueil</a></li>
+        <li><a href="#" onclick="navigate('about')">À propos</a></li>
+        <li><a href="#" onclick="navigate('products')">Produits</a></li>
+        <li><a href="#" onclick="navigate('blog')">Blog</a></li>
+        <li><a href="#" onclick="navigate('contact')">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <button class="nav-btn-login" onclick="showLoginModal()" id="navLoginBtn">Connexion</button>
+        <button class="nav-btn-main" onclick="navigate('products')">Commander</button>
+      </div>
+      <button class="hamburger" onclick="openMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== MAIN SITE ========== -->
+<div id="mainSite">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span>Leader Africain de l'Éco-Construction</span>
+        </div>
+        <h1 class="hero-title">
+          Construire <span class="accent">durable</span>,<br>
+          vivre <span class="italic">responsable</span>
+        </h1>
+        <p class="hero-desc">Des briques écologiques, du charbon vert et des matériaux issus du recyclage pour bâtir un avenir plus propre. Chaque produit contribue à la réduction des déchets et à la protection de notre planète.</p>
+        <div class="hero-actions">
+          <button class="btn btn-white" onclick="navigate('products')">Découvrir nos produits</button>
+          <button class="btn btn-outline" style="border-color:rgba(255,255,255,.5);color:#fff" onclick="navigate('about')">Notre mission</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-number" data-count="850">0</div>
+            <div class="hero-stat-label">Tonnes de déchets recyclés</div>
+          </div>
+          <div>
+            <div class="hero-stat-number" data-count="1200">0</div>
+            <div class="hero-stat-label">Clients satisfaits</div>
+          </div>
+          <div>
+            <div class="hero-stat-number" data-count="15">0</div>
+            <div class="hero-stat-label">Villes desservies</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-card-back"></div>
+          <div class="hero-main-card">
+            <div class="hero-card-badge">Éco-certifié ✓</div>
+            <div class="hero-card-img">🧱</div>
+            <div class="hero-card-title">Brique Écologique Premium</div>
+            <div class="hero-card-sub">Résistante · Durable · 100% recyclé</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1.25rem">
+              <div style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--green-400)">45 000 FCFA<span style="font-size:.75rem;font-weight:400;color:rgba(255,255,255,.5)">/palette</span></div>
+              <button class="btn-order" onclick="openOrderModal({name:'Brique Écologique Premium',price:'45 000 FCFA/palette',icon:'🧱',id:1})">Commander</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="padding:7rem 0">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-block">
+        <div class="about-main-img" style="background:linear-gradient(135deg,var(--green-800),var(--green-500));height:400px;border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:7rem">♻️</div>
+        <div class="about-img-badge">
+          <div class="big">2018</div>
+          <div class="small">Fondée en</div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Notre mission</div>
+        <h2 class="section-title">L'économie circulaire au service de <em>l'Afrique</em></h2>
+        <p class="section-subtitle" style="color:var(--gray-500)">EcoVert transforme les déchets en ressources précieuses pour un développement durable. Nous valorisons les déchets locaux pour produire des matériaux de construction et d'énergie de haute qualité.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">🧱</div>
+            <div>
+              <div class="about-feature-title">Briques écologiques</div>
+              <div class="about-feature-desc">Fabriquées à partir de déchets plastiques et organiques, 40% plus résistantes que les briques traditionnelles.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">🔥</div>
+            <div>
+              <div class="about-feature-title">Charbon écologique</div>
+              <div class="about-feature-desc">Issu de la valorisation des déchets organiques, sans déforestation, avec 30% moins de fumée.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">🌱</div>
+            <div>
+              <div class="about-feature-title">Produits dérivés du recyclage</div>
+              <div class="about-feature-desc">Compost, matériaux d'isolation, pavés écologiques et bien d'autres produits innovants.</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:2rem">
+          <button class="btn btn-primary" onclick="navigate('about')">En savoir plus →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section id="impact">
+  <div class="container">
+    <div class="impact-grid">
+      <div class="impact-item fade-in">
+        <div class="impact-number"><span data-count="850">0</span><span class="impact-unit">T</span></div>
+        <div class="impact-label">Déchets recyclés cette année</div>
+      </div>
+      <div class="impact-item fade-in">
+        <div class="impact-number"><span data-count="12500">0</span><span class="impact-unit">m²</span></div>
+        <div class="impact-label">Constructions réalisées</div>
+      </div>
+      <div class="impact-item fade-in">
+        <div class="impact-number"><span data-count="340">0</span><span class="impact-unit">T</span></div>
+        <div class="impact-label">CO₂ évité par nos produits</div>
+      </div>
+      <div class="impact-item fade-in">
+        <div class="impact-number"><span data-count="1200">0</span><span class="impact-unit">+</span></div>
+        <div class="impact-label">Familles approvisionnées</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" style="padding:7rem 0;background:var(--gray-50)">
+  <div class="container">
+    <div class="products-header">
+      <div>
+        <div class="section-label">Nos produits</div>
+        <h2 class="section-title">Matériaux <em>écologiques</em> de qualité</h2>
+      </div>
+      <div class="search-filter">
+        <div class="search-box">
+          <input type="text" placeholder="Rechercher..." id="productSearch" oninput="filterProducts()">
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" onclick="setFilter('tous',this)">Tous</button>
+          <button class="filter-tab" onclick="setFilter('briques',this)">Briques</button>
+          <button class="filter-tab" onclick="setFilter('charbon',this)">Charbon</button>
+          <button class="filter-tab" onclick="setFilter('recyclage',this)">Recyclage</button>
+          <button class="filter-tab" onclick="setFilter('compost',this)">Compost</button>
+        </div>
+      </div>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+    <div class="products-empty hidden" id="productsEmpty">
+      <div style="font-size:3rem;margin-bottom:1rem">🔍</div>
+      <p>Aucun produit trouvé pour cette recherche.</p>
+    </div>
+    <div style="text-align:center;margin-top:3rem">
+      <button class="btn btn-outline" onclick="navigate('products')">Voir tous les produits →</button>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" style="padding:7rem 0">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:1rem">
+      <div class="section-label">Comment ça marche</div>
+      <h2 class="section-title">De votre commande <em>à votre livraison</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step fade-in">
+        <div class="step-num">1</div>
+        <div class="step-icon">🛒</div>
+        <div class="step-title">Choisissez vos produits</div>
+        <div class="step-desc">Parcourez notre catalogue, filtrez par catégorie et sélectionnez les quantités souhaitées.</div>
+      </div>
+      <div class="process-step fade-in">
+        <div class="step-num">2</div>
+        <div class="step-icon">📝</div>
+        <div class="step-title">Remplissez le formulaire</div>
+        <div class="step-desc">Indiquez vos informations de contact et votre adresse de livraison. Aucune inscription requise.</div>
+      </div>
+      <div class="process-step fade-in">
+        <div class="step-num">3</div>
+        <div class="step-icon">✅</div>
+        <div class="step-title">Confirmation immédiate</div>
+        <div class="step-desc">Vous recevez un numéro de commande unique et le vendeur est notifié automatiquement.</div>
+      </div>
+      <div class="process-step fade-in">
+        <div class="step-num">4</div>
+        <div class="step-icon">🚚</div>
+        <div class="step-title">Livraison rapide</div>
+        <div class="step-desc">Votre commande est préparée et livrée directement chez vous dans les meilleurs délais.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="padding:7rem 0;background:var(--green-50)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:1rem">
+      <div class="section-label">Témoignages</div>
+      <h2 class="section-title">Ils nous font <em>confiance</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Les briques EcoVert ont transformé notre projet de construction. Qualité exceptionnelle et livraison dans les délais. Je recommande vivement !"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JM</div>
+          <div>
+            <div class="testimonial-name">Jean-Marie Koyara</div>
+            <div class="testimonial-role">Entrepreneur en bâtiment, Bangui</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Le charbon EcoVert brûle plus longtemps et produit moins de fumée. Ma famille est en meilleure santé depuis qu'on l'utilise. Merci EcoVert !"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SF</div>
+          <div>
+            <div class="testimonial-name">Sylvie Fonkoua</div>
+            <div class="testimonial-role">Restauratrice, Bimbo</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★☆</div>
+        <p class="testimonial-text">"En tant que maçon, j'apprécie la régularité des briques et leur résistance. Le rapport qualité-prix est imbattable sur le marché local."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">PR</div>
+          <div>
+            <div class="testimonial-name">Pierre Rodrigue N.</div>
+            <div class="testimonial-role">Maçon professionnel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" style="padding:7rem 0">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:1rem;flex-wrap:wrap;gap:1rem">
+      <div>
+        <div class="section-label">Actualités</div>
+        <h2 class="section-title">Blog & <em>Environnement</em></h2>
+      </div>
+      <a href="#" class="btn btn-outline btn-sm">Tous les articles →</a>
+    </div>
+    <div class="blog-grid" id="blogGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding:7rem 0;background:var(--gray-50)">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label">Contact</div>
+        <h2 style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--dark);margin-bottom:1rem">Parlons de votre <em style="color:var(--green-600);font-style:italic">projet</em></h2>
+        <p style="color:var(--gray-500);margin-bottom:2rem;line-height:1.7">Notre équipe est disponible pour répondre à toutes vos questions sur nos produits écologiques, les devis et les livraisons.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Adresse</div>
+              <div class="contact-item-val">Quartier Galabadja, Bangui, RCA</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <div class="contact-item-label">Téléphone</div>
+              <div class="contact-item-val">+236 XX XX XX XX</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📧</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-val">contact@ecovert-rca.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">⏰</div>
+            <div>
+              <div class="contact-item-label">Horaires</div>
+              <div class="contact-item-val">Lun–Sam · 8h–18h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-card">
+        <div class="contact-form-title">Envoyez-nous un message</div>
+        <div class="contact-form-sub">Nous vous répondons dans les 24 heures.</div>
+        <form id="contactForm" onsubmit="submitContact(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nom complet <span>*</span></label>
+              <input type="text" class="form-input" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Téléphone <span>*</span></label>
+              <input type="tel" class="form-input" placeholder="+236 XX XX XX XX" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" placeholder="votre@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Sujet <span>*</span></label>
+            <select class="form-select" required>
+              <option value="">Choisir un sujet</option>
+              <option>Demande de devis</option>
+              <option>Question produit</option>
+              <option>Livraison</option>
+              <option>Partenariat</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message <span>*</span></label>
+            <textarea class="form-textarea" placeholder="Décrivez votre besoin..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Envoyer le message 📩</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #mainSite -->
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:.5rem">
+          <span style="background:var(--green-600);padding:.2rem .5rem;border-radius:6px">🌿</span> EcoVert
+        </div>
+        <p>Leader africain de l'éco-construction et de l'économie circulaire. Nous transformons les déchets en ressources pour un avenir durable.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" title="Facebook">📘</a>
+          <a href="#" class="social-btn" title="WhatsApp">📱</a>
+          <a href="#" class="social-btn" title="Instagram">📷</a>
+          <a href="#" class="social-btn" title="LinkedIn">💼</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Produits</h4>
+        <ul>
+          <li><a href="#">Briques écologiques</a></li>
+          <li><a href="#">Charbon vert</a></li>
+          <li><a href="#">Pavés recyclés</a></li>
+          <li><a href="#">Compost organique</a></li>
+          <li><a href="#">Isolants naturels</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="#" onclick="navigate('about')">À propos</a></li>
+          <li><a href="#" onclick="navigate('blog')">Blog</a></li>
+          <li><a href="#" onclick="navigate('contact')">Contact</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Partenaires</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Espace</h4>
+        <ul>
+          <li><a href="#" onclick="showLoginModal()">Connexion</a></li>
+          <li><a href="#" onclick="showRegisterModal()">Créer un compte</a></li>
+          <li><a href="#" onclick="checkDashboard()">Mon espace</a></li>
+          <li><a href="#">Mes commandes</a></li>
+          <li><a href="#">Aide & FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 EcoVert RCA · Tous droits réservés</p>
+      <div class="footer-badge">
+        <div class="dot"></div>
+        Certifié ISO 14001 · Éco-responsable
+      </div>
+      <p>
+        <a href="#" style="color:rgba(255,255,255,.35);margin-right:1rem">Confidentialité</a>
+        <a href="#" style="color:rgba(255,255,255,.35)">CGV</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== MODALS ========== -->
+
+<!-- LOGIN MODAL -->
+<div class="overlay hidden" id="loginModal">
+  <div class="modal" style="max-width:420px">
+    <div class="modal-header">
+      <h3>🌿 Connexion</h3>
+      <button class="modal-close" onclick="closeModal('loginModal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <form onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label class="form-label">Email ou nom d'utilisateur <span>*</span></label>
+          <input type="text" class="form-input" id="loginEmail" placeholder="votre@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Mot de passe <span>*</span></label>
+          <input type="password" class="form-input" id="loginPassword" placeholder="••••••••" required>
+        </div>
+        <div style="display:flex;justify-content:flex-end;margin-bottom:1.25rem">
+          <a href="#" style="font-size:.85rem;color:var(--green-600)">Mot de passe oublié ?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Se connecter</button>
+        <p style="text-align:center;margin-top:1.25rem;font-size:.875rem;color:var(--gray-500)">
+          Pas encore de compte ? <a href="#" style="color:var(--green-600);font-weight:600" onclick="closeModal('loginModal');showRegisterModal()">S'inscrire</a>
+        </p>
+      </form>
+      <div style="margin-top:1.5rem;padding:1rem;background:var(--gray-50);border-radius:var(--radius-sm);font-size:.8rem;color:var(--gray-500)">
+        <strong>Démo :</strong> admin@ecovert.com / admin123 (Admin) · user@ecovert.com / user123 (Utilisateur)
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REGISTER MODAL -->
+<div class="overlay hidden" id="registerModal">
+  <div class="modal" style="max-width:520px">
+    <div class="modal-header">
+      <h3>🌱 Créer un compte</h3>
+      <button class="modal-close" onclick="closeModal('registerModal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <form onsubmit="handleRegister(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Prénom <span>*</span></label>
+            <input type="text" class="form-input" placeholder="Prénom" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nom <span>*</span></label>
+            <input type="text" class="form-input" placeholder="Nom" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email <span>*</span></label>
+          <input type="email" class="form-input" placeholder="votre@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Téléphone <span>*</span></label>
+          <input type="tel" class="form-input" placeholder="+236 XX XX XX XX" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Ville</label>
+          <input type="text" class="form-input" placeholder="Votre ville">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Mot de passe <span>*</span></label>
+            <input type="password" class="form-input" placeholder="8+ caractères" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Confirmer <span>*</span></label>
+            <input type="password" class="form-input" placeholder="Répéter le mot de passe" required>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:1.25rem">
+          <input type="checkbox" style="margin-top:3px;cursor:pointer" required>
+          <label style="font-size:.85rem;color:var(--gray-500);line-height:1.5">J'accepte les <a href="#" style="color:var(--green-600)">conditions d'utilisation</a> et la <a href="#" style="color:var(--green-600)">politique de confidentialité</a>.</label>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Créer mon compte 🌿</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER MODAL -->
+<div class="overlay hidden" id="orderModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>🛒 Passer une commande</h3>
+      <button class="modal-close" onclick="closeModal('orderModal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="order-product-preview" id="orderProductPreview"></div>
+      <form onsubmit="submitOrder(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Nom complet <span>*</span></label>
+            <input type="text" class="form-input" id="orderName" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Téléphone <span>*</span></label>
+            <input type="tel" class="form-input" id="orderPhone" placeholder="+236 XX XX XX XX" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email <span class="form-hint">(optionnel)</span></label>
+          <input type="email" class="form-input" id="orderEmail" placeholder="votre@email.com">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Ville <span>*</span></label>
+            <input type="text" class="form-input" id="orderCity" placeholder="Votre ville" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Quantité <span>*</span></label>
+            <input type="number" class="form-input" id="orderQty" placeholder="Ex: 10" min="1" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Adresse de livraison <span>*</span></label>
+          <input type="text" class="form-input" id="orderAddress" placeholder="Quartier, rue..." required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Commentaire</label>
+          <textarea class="form-textarea" id="orderComment" placeholder="Instructions particulières, précisions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Confirmer la commande ✅</button>
+        <p style="text-align:center;margin-top:.75rem;font-size:.8rem;color:var(--gray-500)">Votre commande sera confirmée dans les 24h. Un numéro unique vous sera attribué.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER CONFIRMATION MODAL -->
+<div class="overlay hidden" id="confirmModal">
+  <div class="modal" style="max-width:440px;text-align:center">
+    <div class="modal-body" style="padding:2.5rem">
+      <div style="font-size:4rem;margin-bottom:1rem">🎉</div>
+      <h3 style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--dark);margin-bottom:.5rem">Commande enregistrée !</h3>
+      <p style="color:var(--gray-500);margin-bottom:1.5rem">Votre commande a été enregistrée avec succès. Le vendeur vous contactera très prochainement.</p>
+      <div style="background:var(--green-50);border-radius:var(--radius-md);padding:1.25rem;margin-bottom:1.5rem;border:1px solid var(--green-100)">
+        <div style="font-size:.8rem;color:var(--gray-500);margin-bottom:.25rem">Numéro de commande</div>
+        <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--green-700);letter-spacing:.05em" id="orderNumber">EV-2025-XXXX</div>
+      </div>
+      <p style="font-size:.85rem;color:var(--gray-500);margin-bottom:1.5rem">📱 Notez ce numéro pour suivre votre commande</p>
+      <button class="btn btn-primary" onclick="closeModal('confirmModal')" style="width:100%;justify-content:center">Parfait, compris !</button>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div class="overlay hidden" id="productDetailModal">
+  <div class="modal" style="max-width:700px">
+    <div class="modal-header">
+      <h3 id="pdModalTitle">Détail du produit</h3>
+      <button class="modal-close" onclick="closeModal('productDetailModal')">✕</button>
+    </div>
+    <div class="modal-body" id="pdModalBody"></div>
+  </div>
+</div>
+
+<!-- ========== USER DASHBOARD ========== -->
+<div id="page-dashboard">
+  <div class="dashboard-header">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+        <div>
+          <p style="font-size:.85rem;color:rgba(255,255,255,.6);margin-bottom:.25rem">Bienvenue,</p>
+          <h2 style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:#fff" id="dashUserName">Utilisateur</h2>
+        </div>
+        <div style="display:flex;gap:.75rem">
+          <button class="btn btn-white btn-sm" onclick="openAddProductModal()">+ Nouveau produit</button>
+          <button class="btn btn-outline btn-sm" style="border-color:rgba(255,255,255,.4);color:#fff" onclick="logout()">Déconnexion</button>
+        </div>
+      </div>
+      <div class="dash-stats">
+        <div class="dash-stat">
+          <div class="dash-stat-num" id="statMyProducts">0</div>
+          <div class="dash-stat-label">Mes produits</div>
+        </div>
+        <div class="dash-stat">
+          <div class="dash-stat-num" id="statMyOrders">0</div>
+          <div class="dash-stat-label">Commandes reçues</div>
+        </div>
+        <div class="dash-stat">
+          <div class="dash-stat-num" id="statMyVisitors">0</div>
+          <div class="dash-stat-label">Prospects</div>
+        </div>
+        <div class="dash-stat">
+          <div class="dash-stat-num" id="statMyRevenue">0</div>
+          <div class="dash-stat-label">FCFA ce mois</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="padding:2rem 1.5rem">
+    <div class="dashboard-tabs">
+      <button class="dash-tab active" onclick="switchDashTab('my-products',this)">Mes produits</button>
+      <button class="dash-tab" onclick="switchDashTab('my-orders',this)">Commandes</button>
+      <button class="dash-tab" onclick="switchDashTab('my-profile',this)">Mon profil</button>
+      <button class="dash-tab" onclick="switchDashTab('my-messages',this)">Messages</button>
+    </div>
+    <!-- My Products -->
+    <div class="dash-section active" id="dash-my-products">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem">
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700">Mes publications</h3>
+        <button class="btn btn-primary btn-sm" onclick="openAddProductModal()">+ Ajouter un produit</button>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="data-table" id="myProductsTable">
+          <thead><tr><th>Produit</th><th>Catégorie</th><th>Prix</th><th>Stock</th><th>Statut</th><th>Actions</th></tr></thead>
+          <tbody id="myProductsBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- My Orders -->
+    <div class="dash-section" id="dash-my-orders">
+      <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:1.5rem">Commandes reçues</h3>
+      <div style="overflow-x:auto">
+        <table class="data-table">
+          <thead><tr><th>N° Commande</th><th>Client</th><th>Produit</th><th>Qté</th><th>Ville</th><th>Date</th><th>Statut</th></tr></thead>
+          <tbody id="myOrdersBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- My Profile -->
+    <div class="dash-section" id="dash-my-profile">
+      <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:1.5rem">Mon profil</h3>
+      <div class="add-product-form" style="max-width:500px">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Prénom</label>
+            <input type="text" class="form-input" id="profileFirstname" placeholder="Prénom">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nom</label>
+            <input type="text" class="form-input" id="profileLastname" placeholder="Nom">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" id="profileEmail" placeholder="email@exemple.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Téléphone</label>
+          <input type="tel" class="form-input" id="profilePhone" placeholder="+236 XX XX XX XX">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Ville</label>
+          <input type="text" class="form-input" id="profileCity" placeholder="Bangui">
+        </div>
+        <button class="btn btn-primary" onclick="saveProfile()">Enregistrer les modifications</button>
+      </div>
+    </div>
+    <!-- Messages -->
+    <div class="dash-section" id="dash-my-messages">
+      <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:1.5rem">Messagerie</h3>
+      <div style="background:#fff;border-radius:var(--radius-md);border:1px solid var(--gray-100);padding:3rem;text-align:center;color:var(--gray-500)">
+        <div style="font-size:3rem;margin-bottom:1rem">💬</div>
+        <p>Aucun message pour l'instant.</p>
+        <p style="font-size:.85rem;margin-top:.5rem">Vous serez notifié ici lorsqu'un client vous contacte.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== ADMIN DASHBOARD ========== -->
+<div id="page-admin">
+  <div class="dashboard-header" style="background:linear-gradient(135deg,#0e1a1e,#0c3a20)">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+        <div>
+          <p style="font-size:.85rem;color:rgba(255,255,255,.6)">Administration</p>
+          <h2 style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:#fff">Tableau de bord Admin</h2>
+        </div>
+        <div style="display:flex;gap:.75rem">
+          <button class="btn btn-white btn-sm" onclick="navigate('home')">← Voir le site</button>
+          <button class="btn btn-outline btn-sm" style="border-color:rgba(255,255,255,.4);color:#fff" onclick="logout()">Déconnexion</button>
+        </div>
+      </div>
+      <div class="dash-stats">
+        <div class="dash-stat">
+          <div class="dash-stat-num" id="adminStatUsers">0</div>
+          <div class="dash-stat-label">Utilisateurs</div>
+        </div>
+        <div class="dash-stat">
+          <div class="dash-stat-num" id="adminStatProducts">0</div>
+          <div class="dash-stat-label">Produits publiés</div>
+        </div>
+        <div class="dash-stat">
+          <div class="dash-stat-num" id="adminStatOrders">0</div>
+          <div class="dash-stat-label">Commandes totales</div>
+        </div>
+        <div class="dash-stat">
+          <div class="dash-stat-num" id="adminStatRevenue">0</div>
+          <div class="dash-stat-label">FCFA ce mois</div>
+        </div>
+        <div class="dash-stat">
+          <div class="dash-stat-num" id="adminStatVisitors">0</div>
+          <div class="dash-stat-label">Visiteurs aujourd'hui</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="padding:2rem 1.5rem">
+    <div class="dashboard-tabs">
+      <button class="dash-tab active" onclick="switchAdminTab('admin-products',this)">Produits</button>
+      <button class="dash-tab" onclick="switchAdminTab('admin-orders',this)">Commandes</button>
+      <button class="dash-tab" onclick="switchAdminTab('admin-users',this)">Utilisateurs</button>
+      <button class="dash-tab" onclick="switchAdminTab('admin-contacts',this)">Contacts</button>
+      <button class="dash-tab" onclick="switchAdminTab('admin-blog',this)">Blog</button>
+      <button class="dash-tab" onclick="switchAdminTab('admin-settings',this)">Paramètres</button>
+    </div>
+    <!-- Admin Products -->
+    <div class="dash-section active" id="admin-products">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem">
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700">Gestion des produits</h3>
+        <div style="display:flex;gap:.75rem">
+          <button class="btn btn-outline btn-sm" onclick="exportData('products','csv')">Export CSV</button>
+          <button class="btn btn-primary btn-sm" onclick="openAddProductModal()">+ Ajouter</button>
+        </div>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="data-table">
+          <thead><tr><th>ID</th><th>Produit</th><th>Vendeur</th><th>Catégorie</th><th>Prix</th><th>Stock</th><th>Statut</th><th>Actions</th></tr></thead>
+          <tbody id="adminProductsBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Admin Orders -->
+    <div class="dash-section" id="admin-orders">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem">
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700">Gestion des commandes</h3>
+        <div style="display:flex;gap:.75rem">
+          <button class="btn btn-outline btn-sm" onclick="exportData('orders','csv')">Export CSV</button>
+          <button class="btn btn-outline btn-sm" onclick="exportData('orders','pdf')">Export PDF</button>
+        </div>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="data-table">
+          <thead><tr><th>N° Cmd</th><th>Client</th><th>Produit</th><th>Qté</th><th>Ville</th><th>Date</th><th>Statut</th><th>Actions</th></tr></thead>
+          <tbody id="adminOrdersBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Admin Users -->
+    <div class="dash-section" id="admin-users">
+      <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:1.5rem">Gestion des utilisateurs</h3>
+      <div style="overflow-x:auto">
+        <table class="data-table">
+          <thead><tr><th>ID</th><th>Nom</th><th>Email</th><th>Téléphone</th><th>Rôle</th><th>Inscription</th><th>Actions</th></tr></thead>
+          <tbody id="adminUsersBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Admin Contacts -->
+    <div class="dash-section" id="admin-contacts">
+      <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:1.5rem">Messages de contact</h3>
+      <div style="overflow-x:auto">
+        <table class="data-table">
+          <thead><tr><th>Nom</th><th>Téléphone</th><th>Sujet</th><th>Message</th><th>Date</th><th>Actions</th></tr></thead>
+          <tbody id="adminContactsBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Admin Blog -->
+    <div class="dash-section" id="admin-blog">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem">
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700">Gestion du blog</h3>
+        <button class="btn btn-primary btn-sm" onclick="openAddBlogModal()">+ Nouvel article</button>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="data-table">
+          <thead><tr><th>Titre</th><th>Catégorie</th><th>Auteur</th><th>Date</th><th>Statut</th><th>Actions</th></tr></thead>
+          <tbody id="adminBlogBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Admin Settings -->
+    <div class="dash-section" id="admin-settings">
+      <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:1.5rem">Configuration du site</h3>
+      <div class="add-product-form" style="max-width:560px">
+        <div class="form-group">
+          <label class="form-label">Nom de l'entreprise</label>
+          <input type="text" class="form-input" value="EcoVert RCA">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Téléphone principal</label>
+          <input type="tel" class="form-input" value="+236 XX XX XX XX">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email de contact</label>
+          <input type="email" class="form-input" value="contact@ecovert-rca.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Adresse</label>
+          <input type="text" class="form-input" value="Quartier Galabadja, Bangui, RCA">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Description SEO</label>
+          <textarea class="form-textarea" style="min-height:80px">EcoVert — Leader africain de l'éco-construction et de l'économie circulaire.</textarea>
+        </div>
+        <button class="btn btn-primary" onclick="showToast('Paramètres enregistrés !','success')">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADD PRODUCT MODAL -->
+<div class="overlay hidden" id="addProductModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="addProductTitle">➕ Nouveau produit</h3>
+      <button class="modal-close" onclick="closeModal('addProductModal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <form onsubmit="saveProduct(event)">
+        <input type="hidden" id="editProductId">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Nom du produit <span>*</span></label>
+            <input type="text" class="form-input" id="productName" placeholder="Ex: Brique Standard" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Catégorie <span>*</span></label>
+            <select class="form-select" id="productCategory" required>
+              <option value="">Choisir</option>
+              <option value="briques">Briques écologiques</option>
+              <option value="charbon">Charbon écologique</option>
+              <option value="recyclage">Recyclage</option>
+              <option value="compost">Compost</option>
+              <option value="autres">Autres</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Description <span>*</span></label>
+          <textarea class="form-textarea" id="productDesc" placeholder="Description détaillée du produit..." required></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Prix (FCFA) <span>*</span></label>
+            <input type="text" class="form-input" id="productPrice" placeholder="Ex: 45 000" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Unité</label>
+            <input type="text" class="form-input" id="productUnit" placeholder="palette, sac, tonne...">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Stock disponible</label>
+            <input type="number" class="form-input" id="productStock" placeholder="Quantité" min="0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Icône (emoji)</label>
+            <input type="text" class="form-input" id="productIcon" placeholder="🧱">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tags / Mots-clés</label>
+          <input type="text" class="form-input" id="productTags" placeholder="durable, recyclé, eco...">
+        </div>
+        <div style="display:flex;gap:1rem;margin-top:.5rem">
+          <button type="submit" class="btn btn-primary">Enregistrer le produit</button>
+          <button type="button" class="btn btn-outline" onclick="closeModal('addProductModal')">Annuler</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ADD BLOG MODAL -->
+<div class="overlay hidden" id="addBlogModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>✏️ Nouvel article</h3>
+      <button class="modal-close" onclick="closeModal('addBlogModal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <form onsubmit="saveBlog(event)">
+        <div class="form-group">
+          <label class="form-label">Titre <span>*</span></label>
+          <input type="text" class="form-input" id="blogTitle" placeholder="Titre de l'article" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Catégorie</label>
+            <select class="form-select" id="blogCategory">
+              <option>Environnement</option>
+              <option>Économie circulaire</option>
+              <option>Actualités</option>
+              <option>Conseils</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Icône</label>
+            <input type="text" class="form-input" id="blogIcon" placeholder="🌿">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Extrait</label>
+          <textarea class="form-textarea" id="blogExcerpt" placeholder="Résumé court de l'article..." style="min-height:80px"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Contenu complet</label>
+          <textarea class="form-textarea" id="blogContent" placeholder="Contenu de l'article..." style="min-height:160px"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Publier l'article</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// DATA STORE (localStorage-based persistence)
+// ============================================================
+const DB = {
+  get: (k) => { try { return JSON.parse(localStorage.getItem('ev_'+k)) || null } catch(e){return null} },
+  set: (k,v) => { localStorage.setItem('ev_'+k, JSON.stringify(v)) },
+  remove: (k) => { localStorage.removeItem('ev_'+k) }
+};
+
+// ============================================================
+// SEED DATA
+// ============================================================
+function initData() {
+  if (!DB.get('initialized')) {
+    DB.set('users', [
+      {id:1,firstname:'Admin',lastname:'EcoVert',email:'admin@ecovert.com',password:'admin123',phone:'+236 70 00 00 01',city:'Bangui',role:'admin',created:'2024-01-15'},
+      {id:2,firstname:'Marie',lastname:'Koumba',email:'user@ecovert.com',password:'user123',phone:'+236 72 11 22 33',city:'Bangui',role:'user',created:'2024-03-10'},
+      {id:3,firstname:'Sylvain',lastname:'Bozize',email:'sylvain@mail.com',password:'pass123',phone:'+236 75 44 55 66',city:'Bimbo',role:'user',created:'2024-05-20'}
+    ]);
+    DB.set('products', [
+      {id:1,name:'Brique Écologique Premium',category:'briques',desc:'Fabriquée à partir de déchets plastiques et organiques compressés. 40% plus résistante que les briques traditionnelles, excellente isolation thermique.',price:'45 000',unit:'palette (100 pcs)',stock:500,icon:'🧱',userId:2,status:'active',tags:'résistant,durable,recyclé',created:'2024-06-01',specs:{dimensions:'20x10x5 cm',poids:'2.4 kg/brique',resistance:'15 MPa',couleur:'Gris naturel'}},
+      {id:2,name:'Charbon Vert Extra',category:'charbon',desc:'Charbon écologique issu de la carbonisation de déchets agricoles. Brûle 30% plus longtemps, produit moins de fumée et préserve les forêts.',price:'2 500',unit:'sac 25 kg',stock:1200,icon:'🔥',userId:2,status:'active',tags:'sans déforestation,longue durée,peu de fumée',created:'2024-06-05',specs:{poids:'25 kg/sac',duree:'+30% vs charbon ordinaire',fumee:'Réduite 80%',origine:'Déchets agro'}},
+      {id:3,name:'Pavé Recyclé Standard',category:'recyclage',desc:'Pavés de sol fabriqués à partir de plastiques recyclés et de résidus industriels. Idéal pour cours, allées et espaces publics.',price:'18 000',unit:'m² (20 pavés)',stock:300,icon:'🪨',userId:3,status:'active',tags:'sol,extérieur,recyclé',created:'2024-06-10',specs:{epaisseur:'6 cm',resistance:'Classe T',couleur:'Multiple',installation:'Facile'}},
+      {id:4,name:'Compost Organique Premium',category:'compost',desc:'Compost riche en nutriments issu du compostage de déchets organiques municipaux. Parfait pour jardins, cultures maraîchères et reboisement.',price:'3 500',unit:'sac 40 kg',stock:800,icon:'🌱',userId:2,status:'active',tags:'agriculture,jardin,bio',created:'2024-06-12',specs:{npk:'3-2-1.5',ph:'6.5-7.5',humidity:'< 40%',certification:'Bio'}},
+      {id:5,name:'Isolant Naturel Eco',category:'recyclage',desc:"Panneaux isolants fabriqués à partir de fibres végétales recyclées. Excellent rapport isolation/coût pour toitures et cloisons.",price:'8 500',unit:'panneau 1m²',stock:150,icon:'🏗️',userId:3,status:'active',tags:'isolation,toiture,thermique',created:'2024-06-15',specs:{epaisseur:'5 cm',lambda:'0.04 W/mK',feu:'Classe B',poids:'4 kg/m²'}},
+      {id:6,name:'Charbon Vert Mini',category:'charbon',desc:'Version économique de notre charbon vert, idéale pour les ménages. Même qualité, conditionnement adapté aux petits besoins.',price:'1 200',unit:'sac 12 kg',stock:2000,icon:'⚫',userId:2,status:'active',tags:'ménage,économique,propre',created:'2024-06-18',specs:{poids:'12 kg',duree:'+25%',fumee:'Réduite',origine:'Déchets bio'}}
+    ]);
+    DB.set('orders', [
+      {id:1,num:'EV-2025-0001',productId:1,productName:'Brique Écologique Premium',clientName:'Jean-Marie Koyara',phone:'+236 70 11 22 33',email:'',city:'Bangui',address:'Quartier Lakouanga',qty:5,comment:'Pour construction d\'une maison',status:'confirmed',date:'2025-01-10',userId:2},
+      {id:2,num:'EV-2025-0002',productId:2,productName:'Charbon Vert Extra',clientName:'Alphonsine Seka',phone:'+236 72 33 44 55',email:'alphonsine@mail.com',city:'Bimbo',address:'Rue des Écoles',qty:10,comment:'',status:'delivered',date:'2025-01-12',userId:2},
+      {id:3,num:'EV-2025-0003',productId:4,productName:'Compost Organique Premium',clientName:'Robert Djouma',phone:'+236 75 55 66 77',email:'',city:'Bangui',address:'Quartier Boeing',qty:3,comment:'Pour mon jardin',status:'pending',date:'2025-01-14',userId:3}
+    ]);
+    DB.set('blog_posts', [
+      {id:1,title:'L\'économie circulaire, moteur de développement durable en Afrique',category:'Économie circulaire',icon:'♻️',excerpt:'Comment valoriser les déchets locaux peut transformer nos villes et créer des emplois verts pour les jeunes africains.',content:'Contenu complet de l\'article...',author:'Équipe EcoVert',status:'published',date:'2025-01-08'},
+      {id:2,title:'Pourquoi choisir les briques écologiques pour votre construction ?',category:'Conseils',icon:'🧱',excerpt:'Comparaison complète entre les briques traditionnelles et nos briques écologiques. Coût, résistance, impact environnemental.',content:'Contenu complet de l\'article...',author:'Équipe EcoVert',status:'published',date:'2025-01-05'},
+      {id:3,title:'Le charbon vert : comment il préserve nos forêts',category:'Environnement',icon:'🌳',excerpt:'La déforestation liée au charbon de bois est un fléau. Découvrez comment notre charbon vert rompt ce cycle destructeur.',content:'Contenu complet de l\'article...',author:'Équipe EcoVert',status:'published',date:'2024-12-28'}
+    ]);
+    DB.set('contacts', []);
+    DB.set('initialized', true);
+  }
+}
+
+// ============================================================
+// APP STATE
+// ============================================================
+let currentUser = null;
+let currentPage = 'home';
+let currentFilter = 'tous';
+let currentOrderProduct = null;
+let editingProduct = null;
+
+// ============================================================
+// INIT
+// ============================================================
+document.addEventListener('DOMContentLoaded', function() {
+  initData();
+  currentUser = DB.get('currentUser');
+  updateNavUser();
+  renderProducts();
+  renderBlog();
+  animateCounters();
+  observeFadeIns();
+  navigate('home');
+  window.addEventListener('scroll', onScroll);
+  document.addEventListener('keydown', (e) => { if(e.key==='Escape') closeAllModals(); });
+  // Auto-increment visitor count
+  let v = parseInt(localStorage.getItem('ev_visitor_count')||'124'); v++; localStorage.setItem('ev_visitor_count',v);
+});
+
+function onScroll(){
+  const nb = document.getElementById('navbar');
+  if(window.scrollY > 50) nb.classList.add('scrolled');
+  else nb.classList.remove('scrolled');
+}
+
+// ============================================================
+// NAVIGATION
+// ============================================================
+function navigate(page) {
+  document.getElementById('mainSite').style.display = 'none';
+  document.getElementById('page-dashboard').style.display = 'none';
+  document.getElementById('page-admin').style.display = 'none';
+  document.getElementById('mainSite').style.display = '';
+  const dash = document.getElementById('page-dashboard');
+  const admin = document.getElementById('page-admin');
+  if(page === 'dashboard') {
+    if(!currentUser){ showLoginModal(); return; }
+    if(currentUser.role==='admin'){ showAdminDashboard(); return; }
+    showUserDashboard(); return;
+  }
+  if(page === 'admin') {
+    if(!currentUser||currentUser.role!=='admin'){ showToast('Accès refusé','error'); return; }
+    showAdminDashboard(); return;
+  }
+  document.getElementById('mainSite').style.display = '';
+  currentPage = page;
+  if(page==='home') window.scrollTo({top:0,behavior:'smooth'});
+  else if(page==='about') document.getElementById('about').scrollIntoView({behavior:'smooth'});
+  else if(page==='products') document.getElementById('products').scrollIntoView({behavior:'smooth'});
+  else if(page==='blog') document.getElementById('blog').scrollIntoView({behavior:'smooth'});
+  else if(page==='contact') document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+  updateActiveNav(page);
+}
+
+function updateActiveNav(page) {
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+}
+
+function showUserDashboard() {
+  document.getElementById('mainSite').style.display = 'none';
+  document.getElementById('page-admin').style.display = 'none';
+  document.getElementById('page-dashboard').style.display = 'block';
+  window.scrollTo(0,0);
+  document.getElementById('navbar').classList.add('scrolled');
+  document.getElementById('dashUserName').textContent = currentUser.firstname + ' ' + currentUser.lastname;
+  loadUserDashData();
+}
+
+function showAdminDashboard() {
+  document.getElementById('mainSite').style.display = 'none';
+  document.getElementById('page-dashboard').style.display = 'none';
+  document.getElementById('page-admin').style.display = 'block';
+  window.scrollTo(0,0);
+  document.getElementById('navbar').classList.add('scrolled');
+  loadAdminDashData();
+}
+
+function checkDashboard() {
+  if(!currentUser) { showLoginModal(); return; }
+  if(currentUser.role==='admin') showAdminDashboard();
+  else showUserDashboard();
+}
+
+// ============================================================
+// PRODUCTS
+// ============================================================
+function getProducts() { return DB.get('products') || []; }
+
+function renderProducts(filter, search) {
+  const grid = document.getElementById('productsGrid');
+  const empty = document.getElementById('productsEmpty');
+  let prods = getProducts().filter(p => p.status === 'active');
+  if(filter && filter !== 'tous') prods = prods.filter(p => p.category === filter);
+  if(search) prods = prods.filter(p => (p.name+p.desc+p.tags).toLowerCase().includes(search.toLowerCase()));
+  if(prods.length === 0) { grid.innerHTML=''; empty.classList.remove('hidden'); return; }
+  empty.classList.add('hidden');
+  grid.innerHTML = prods.slice(0,6).map(p => `
+    <div class="product-card" onclick="showProductDetail(${p.id})">
+      <div class="product-img" style="background:linear-gradient(135deg,${getCatColor(p.category)})">
+        <div style="font-size:3.5rem">${p.icon||'📦'}</div>
+        <div class="product-badge"><span class="badge badge-green">${getCatLabel(p.category)}</span></div>
+      </div>
+      <div class="product-body">
+        <div class="product-category">${getCatLabel(p.category)}</div>
+        <div class="product-name">${p.name}</div>
+        <div class="product-desc">${p.desc.substring(0,100)}...</div>
+        <div class="product-footer">
+          <div class="product-price">${p.price} FCFA<span class="unit"> / ${p.unit||'unité'}</span></div>
+          <button class="btn-order" onclick="event.stopPropagation();openOrderModal({name:'${p.name}',price:'${p.price} FCFA/${p.unit||'unité'}',icon:'${p.icon||'📦'}',id:${p.id}})">Commander</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function getCatColor(cat) {
+  const map = {briques:'#d6f2dc,#4abe6a',charbon:'#2d2d2d,#555',recyclage:'#d6e8f2,#4a8abe',compost:'#f2e8d6,#be9a4a',autres:'#e8d6f2,#8a4abe'};
+  return map[cat]||'#e8f5e9,#66bb6a';
+}
+function getCatLabel(cat) {
+  const map = {briques:'Briques',charbon:'Charbon',recyclage:'Recyclage',compost:'Compost',autres:'Autres'};
+  return map[cat]||cat;
+}
+
+function setFilter(filter, el) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  filterProducts();
+}
+function filterProducts() {
+  const search = document.getElementById('productSearch').value;
+  renderProducts(currentFilter, search);
+}
+
+function showProductDetail(id) {
+  const p = getProducts().find(pr=>pr.id===id);
+  if(!p) return;
+  document.getElementById('pdModalTitle').textContent = p.name;
+  const specs = p.specs ? Object.entries(p.specs).map(([k,v])=>`<div class="product-spec-row"><span class="spec-key">${k}</span><span class="spec-val">${v}</span></div>`).join('') : '';
+  document.getElementById('pdModalBody').innerHTML = `
+    <div class="product-detail-grid">
+      <div class="product-detail-img">${p.icon||'📦'}</div>
+      <div>
+        <div class="product-detail-category">${getCatLabel(p.category)}</div>
+        <h2 class="product-detail-title">${p.name}</h2>
+        <div class="product-detail-price">${p.price} FCFA <span style="font-size:1rem;font-weight:400;color:var(--gray-500);font-family:var(--font-body)">/ ${p.unit||'unité'}</span></div>
+        <p class="product-detail-desc">${p.desc}</p>
+        ${specs?`<div class="product-specs">${specs}</div>`:''}
+        <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:1.5rem;font-size:.9rem;color:var(--green-700)">
+          <span>✅</span> Stock : <strong>${p.stock||0} unités disponibles</strong>
+        </div>
+        <button class="btn btn-primary" onclick="closeModal('productDetailModal');openOrderModal({name:'${p.name}',price:'${p.price} FCFA/${p.unit||'unité'}',icon:'${p.icon||'📦'}',id:${p.id}})">
+          Commander maintenant 🛒
+        </button>
+      </div>
+    </div>
+  `;
+  document.getElementById('productDetailModal').classList.remove('hidden');
+}
+
+// ============================================================
+// BLOG
+// ============================================================
+function renderBlog() {
+  const posts = DB.get('blog_posts')||[];
+  document.getElementById('blogGrid').innerHTML = posts.slice(0,3).map(p=>`
+    <div class="blog-card">
+      <div class="blog-img">${p.icon||'📰'}</div>
+      <div class="blog-body">
+        <div class="blog-meta">
+          <span class="badge badge-green">${p.category}</span>
+          <span class="blog-date">${formatDate(p.date)}</span>
+        </div>
+        <h3 class="blog-title">${p.title}</h3>
+        <p class="blog-excerpt">${p.excerpt}</p>
+        <a href="#" class="blog-read-more">Lire l'article →</a>
+      </div>
+    </div>
+  `).join('');
+}
+function formatDate(d) {
+  const months=['jan.','fév.','mars','avr.','mai','juin','juil.','août','sep.','oct.','nov.','déc.'];
+  const dt=new Date(d); return `${dt.getDate()} ${months[dt.getMonth()]} ${dt.getFullYear()}`;
+}
+
+// ============================================================
+// ORDER FLOW
+// ============================================================
+function openOrderModal(product) {
+  currentOrderProduct = product;
+  document.getElementById('orderProductPreview').innerHTML = `
+    <div class="order-product-icon">${product.icon}</div>
+    <div>
+      <div class="order-product-name">${product.name}</div>
+      <div class="order-product-price">${product.price}</div>
+    </div>
+  `;
+  if(currentUser){ document.getElementById('orderName').value=''; }
+  document.getElementById('orderModal').classList.remove('hidden');
+}
+
+function submitOrder(e) {
+  e.preventDefault();
+  const num = 'EV-2025-' + String(Date.now()).slice(-4);
+  const order = {
+    id: Date.now(),
+    num,
+    productId: currentOrderProduct.id,
+    productName: currentOrderProduct.name,
+    clientName: document.getElementById('orderName').value,
+    phone: document.getElementById('orderPhone').value,
+    email: document.getElementById('orderEmail').value,
+    city: document.getElementById('orderCity').value,
+    address: document.getElementById('orderAddress').value,
+    qty: document.getElementById('orderQty').value,
+    comment: document.getElementById('orderComment').value,
+    status: 'pending',
+    date: new Date().toISOString().split('T')[0],
+    userId: 2
+  };
+  const orders = DB.get('orders')||[];
+  orders.push(order);
+  DB.set('orders', orders);
+  document.getElementById('orderNumber').textContent = num;
+  closeModal('orderModal');
+  document.getElementById('confirmModal').classList.remove('hidden');
+  e.target.reset();
+}
+
+// ============================================================
+// AUTH
+// ============================================================
+function handleLogin(e) {
+  e.preventDefault();
+  const email = document.getElementById('loginEmail').value;
+  const pass = document.getElementById('loginPassword').value;
+  const users = DB.get('users')||[];
+  const user = users.find(u => (u.email===email) && u.password===pass);
+  if(!user){ showToast('Email ou mot de passe incorrect','error'); return; }
+  currentUser = user;
+  DB.set('currentUser', user);
+  closeModal('loginModal');
+  updateNavUser();
+  showToast(`Bienvenue, ${user.firstname} ! 🌿`, 'success');
+  setTimeout(()=>{ if(user.role==='admin') showAdminDashboard(); else showUserDashboard(); }, 500);
+}
+
+function handleRegister(e) {
+  e.preventDefault();
+  const inputs = e.target.querySelectorAll('input[type=text],input[type=email],input[type=tel],input[type=password]');
+  const users = DB.get('users')||[];
+  const newUser = {
+    id: Date.now(),
+    firstname: inputs[0].value,
+    lastname: inputs[1].value,
+    email: inputs[2].value,
+    phone: inputs[3].value,
+    city: inputs[4].value,
+    password: inputs[5].value,
+    role: 'user',
+    created: new Date().toISOString().split('T')[0]
+  };
+  if(users.find(u=>u.email===newUser.email)){ showToast('Cet email est déjà utilisé','error'); return; }
+  users.push(newUser);
+  DB.set('users', users);
+  currentUser = newUser;
+  DB.set('currentUser', newUser);
+  closeModal('registerModal');
+  updateNavUser();
+  showToast('Compte créé avec succès ! 🌱', 'success');
+  setTimeout(()=>showUserDashboard(), 600);
+}
+
+function logout() {
+  currentUser = null;
+  DB.remove('currentUser');
+  updateNavUser();
+  document.getElementById('page-dashboard').style.display = 'none';
+  document.getElementById('page-admin').style.display = 'none';
+  document.getElementById('mainSite').style.display = '';
+  showToast('Déconnexion réussie', 'info');
+}
+
+function updateNavUser() {
+  const btn = document.getElementById('navLoginBtn');
+  if(currentUser) {
+    btn.textContent = currentUser.firstname + ' →';
+    btn.onclick = checkDashboard;
+  } else {
+    btn.textContent = 'Connexion';
+    btn.onclick = showLoginModal;
+  }
+}
+
+// ============================================================
+// DASHBOARD DATA
+// ============================================================
+function loadUserDashData() {
+  const products = getProducts().filter(p=>p.userId===currentUser.id);
+  const orders = (DB.get('orders')||[]).filter(o=>o.userId===currentUser.id);
+  document.getElementById('statMyProducts').textContent = products.length;
+  document.getElementById('statMyOrders').textContent = orders.length;
+  document.getElementById('statMyVisitors').textContent = Math.floor(Math.random()*20)+5;
+  document.getElementById('statMyRevenue').textContent = (orders.length*15000).toLocaleString();
+  document.getElementById('profileFirstname').value = currentUser.firstname;
+  document.getElementById('profileLastname').value = currentUser.lastname;
+  document.getElementById('profileEmail').value = currentUser.email;
+  document.getElementById('profilePhone').value = currentUser.phone||'';
+  document.getElementById('profileCity').value = currentUser.city||'';
+  renderMyProducts(products);
+  renderMyOrders(orders);
+}
+
+function renderMyProducts(products) {
+  const tbody = document.getElementById('myProductsBody');
+  if(!products.length){ tbody.innerHTML='<tr><td colspan="6" style="text-align:center;color:var(--gray-500);padding:2rem">Aucun produit publié.</td></tr>'; return; }
+  tbody.innerHTML = products.map(p=>`
+    <tr>
+      <td><strong>${p.name}</strong></td>
+      <td><span class="badge badge-green">${getCatLabel(p.category)}</span></td>
+      <td>${p.price} FCFA</td>
+      <td>${p.stock||0}</td>
+      <td><span class="status-badge ${p.status==='active'?'status-confirmed':'status-pending'}">${p.status==='active'?'Actif':'Inactif'}</span></td>
+      <td><div class="table-actions">
+        <button class="tbl-btn tbl-btn-edit" onclick="editProduct(${p.id})">Modifier</button>
+        <button class="tbl-btn tbl-btn-del" onclick="deleteProduct(${p.id})">Supprimer</button>
+      </div></td>
+    </tr>
+  `).join('');
+}
+
+function renderMyOrders(orders) {
+  const tbody = document.getElementById('myOrdersBody');
+  if(!orders.length){ tbody.innerHTML='<tr><td colspan="7" style="text-align:center;color:var(--gray-500);padding:2rem">Aucune commande reçue.</td></tr>'; return; }
+  tbody.innerHTML = orders.map(o=>`
+    <tr>
+      <td><strong>${o.num}</strong></td>
+      <td>${o.clientName}</td>
+      <td>${o.productName}</td>
+      <td>${o.qty}</td>
+      <td>${o.city}</td>
+      <td>${o.date}</td>
+      <td><span class="status-badge status-${o.status}">${getStatusLabel(o.status)}</span></td>
+    </tr>
+  `).join('');
+}
+
+function loadAdminDashData() {
+  const users = DB.get('users')||[];
+  const products = getProducts();
+  const orders = DB.get('orders')||[];
+  document.getElementById('adminStatUsers').textContent = users.length;
+  document.getElementById('adminStatProducts').textContent = products.length;
+  document.getElementById('adminStatOrders').textContent = orders.length;
+  document.getElementById('adminStatRevenue').textContent = (orders.length*18000).toLocaleString();
+  document.getElementById('adminStatVisitors').textContent = parseInt(localStorage.getItem('ev_visitor_count')||'125');
+  renderAdminProducts(products);
+  renderAdminOrders(orders);
+  renderAdminUsers(users);
+  renderAdminContacts();
+  renderAdminBlog();
+}
+
+function renderAdminProducts(products) {
+  const tbody = document.getElementById('adminProductsBody');
+  const usersMap = {};
+  (DB.get('users')||[]).forEach(u=>usersMap[u.id]=u.firstname+' '+u.lastname);
+  tbody.innerHTML = products.map(p=>`
+    <tr>
+      <td>${p.id}</td>
+      <td><strong>${p.name}</strong><br><small style="color:var(--gray-500)">${p.icon}</small></td>
+      <td>${usersMap[p.userId]||'—'}</td>
+      <td><span class="badge badge-green">${getCatLabel(p.category)}</span></td>
+      <td>${p.price} FCFA</td>
+      <td>${p.stock||0}</td>
+      <td><span class="status-badge ${p.status==='active'?'status-confirmed':'status-pending'}">${p.status==='active'?'Actif':'Inactif'}</span></td>
+      <td><div class="table-actions">
+        <button class="tbl-btn tbl-btn-edit" onclick="editProduct(${p.id})">Modifier</button>
+        <button class="tbl-btn tbl-btn-del" onclick="deleteProduct(${p.id})">Supprimer</button>
+      </div></td>
+    </tr>
+  `).join('');
+}
+
+function renderAdminOrders(orders) {
+  const tbody = document.getElementById('adminOrdersBody');
+  tbody.innerHTML = orders.map(o=>`
+    <tr>
+      <td><strong>${o.num}</strong></td>
+      <td>${o.clientName}<br><small style="color:var(--gray-500)">${o.phone}</small></td>
+      <td>${o.productName}</td>
+      <td>${o.qty}</td>
+      <td>${o.city}</td>
+      <td>${o.date}</td>
+      <td><select class="form-select" style="padding:.25rem .5rem;font-size:.8rem;width:auto" onchange="updateOrderStatus(${o.id},this.value)">
+        <option value="pending" ${o.status==='pending'?'selected':''}>En attente</option>
+        <option value="confirmed" ${o.status==='confirmed'?'selected':''}>Confirmée</option>
+        <option value="delivered" ${o.status==='delivered'?'selected':''}>Livrée</option>
+        <option value="cancelled" ${o.status==='cancelled'?'selected':''}>Annulée</option>
+      </select></td>
+      <td><button class="tbl-btn tbl-btn-del" onclick="deleteOrder(${o.id})">Suppr.</button></td>
+    </tr>
+  `).join('');
+}
+
+function renderAdminUsers(users) {
+  const tbody = document.getElementById('adminUsersBody');
+  tbody.innerHTML = users.map(u=>`
+    <tr>
+      <td>${u.id}</td>
+      <td><strong>${u.firstname} ${u.lastname}</strong></td>
+      <td>${u.email}</td>
+      <td>${u.phone||'—'}</td>
+      <td><span class="status-badge ${u.role==='admin'?'status-delivered':'status-confirmed'}">${u.role==='admin'?'Admin':'Utilisateur'}</span></td>
+      <td>${u.created}</td>
+      <td><div class="table-actions">
+        <button class="tbl-btn tbl-btn-del" onclick="deleteUser(${u.id})">Suppr.</button>
+      </div></td>
+    </tr>
+  `).join('');
+}
+
+function renderAdminContacts() {
+  const contacts = DB.get('contacts')||[];
+  const tbody = document.getElementById('adminContactsBody');
+  if(!contacts.length){ tbody.innerHTML='<tr><td colspan="6" style="text-align:center;color:var(--gray-500);padding:2rem">Aucun message.</td></tr>'; return; }
+  tbody.innerHTML = contacts.map(c=>`
+    <tr>
+      <td>${c.name}</td>
+      <td>${c.phone}</td>
+      <td>${c.subject}</td>
+      <td style="max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${c.message}</td>
+      <td>${c.date}</td>
+      <td><button class="tbl-btn tbl-btn-del" onclick="deleteContact(${c.id})">Suppr.</button></td>
+    </tr>
+  `).join('');
+}
+
+function renderAdminBlog() {
+  const posts = DB.get('blog_posts')||[];
+  const tbody = document.getElementById('adminBlogBody');
+  tbody.innerHTML = posts.map(p=>`
+    <tr>
+      <td>${p.icon} <strong>${p.title.substring(0,50)}...</strong></td>
+      <td><span class="badge badge-green">${p.category}</span></td>
+      <td>${p.author}</td>
+      <td>${p.date}</td>
+      <td><span class="status-badge status-confirmed">${p.status}</span></td>
+      <td><div class="table-actions">
+        <button class="tbl-btn tbl-btn-del" onclick="deleteBlogPost(${p.id})">Suppr.</button>
+      </div></td>
+    </tr>
+  `).join('');
+}
+
+function getStatusLabel(s) {
+  const map = {pending:'En attente',confirmed:'Confirmée',delivered:'Livrée',cancelled:'Annulée'};
+  return map[s]||s;
+}
+
+// ============================================================
+// CRUD OPERATIONS
+// ============================================================
+function openAddProductModal() {
+  editingProduct = null;
+  document.getElementById('addProductTitle').textContent = '➕ Nouveau produit';
+  document.getElementById('editProductId').value = '';
+  document.getElementById('productName').value = '';
+  document.getElementById('productCategory').value = '';
+  document.getElementById('productDesc').value = '';
+  document.getElementById('productPrice').value = '';
+  document.getElementById('productUnit').value = '';
+  document.getElementById('productStock').value = '';
+  document.getElementById('productIcon').value = '📦';
+  document.getElementById('productTags').value = '';
+  document.getElementById('addProductModal').classList.remove('hidden');
+}
+
+function editProduct(id) {
+  const p = getProducts().find(pr=>pr.id===id);
+  if(!p) return;
+  document.getElementById('addProductTitle').textContent = '✏️ Modifier le produit';
+  document.getElementById('editProductId').value = id;
+  document.getElementById('productName').value = p.name;
+  document.getElementById('productCategory').value = p.category;
+  document.getElementById('productDesc').value = p.desc;
+  document.getElementById('productPrice').value = p.price;
+  document.getElementById('productUnit').value = p.unit||'';
+  document.getElementById('productStock').value = p.stock||0;
+  document.getElementById('productIcon').value = p.icon||'📦';
+  document.getElementById('productTags').value = p.tags||'';
+  document.getElementById('addProductModal').classList.remove('hidden');
+}
+
+function saveProduct(e) {
+  e.preventDefault();
+  const editId = document.getElementById('editProductId').value;
+  const products = getProducts();
+  const productData = {
+    name: document.getElementById('productName').value,
+    category: document.getElementById('productCategory').value,
+    desc: document.getElementById('productDesc').value,
+    price: document.getElementById('productPrice').value,
+    unit: document.getElementById('productUnit').value,
+    stock: parseInt(document.getElementById('productStock').value)||0,
+    icon: document.getElementById('productIcon').value||'📦',
+    tags: document.getElementById('productTags').value,
+    status: 'active',
+    userId: currentUser?currentUser.id:2,
+    specs: {}
+  };
+  if(editId) {
+    const idx = products.findIndex(p=>p.id==editId);
+    if(idx!==-1) { products[idx] = {...products[idx],...productData}; }
+  } else {
+    productData.id = Date.now();
+    productData.created = new Date().toISOString().split('T')[0];
+    products.push(productData);
+  }
+  DB.set('products', products);
+  closeModal('addProductModal');
+  showToast(editId?'Produit modifié !':'Produit ajouté !','success');
+  renderProducts();
+  if(currentUser&&currentUser.role==='admin') loadAdminDashData();
+  else if(currentUser) loadUserDashData();
+}
+
+function deleteProduct(id) {
+  if(!confirm('Supprimer ce produit ?')) return;
+  const products = getProducts().filter(p=>p.id!==id);
+  DB.set('products',products);
+  showToast('Produit supprimé','info');
+  renderProducts();
+  if(currentUser&&currentUser.role==='admin') loadAdminDashData();
+  else if(currentUser) loadUserDashData();
+}
+
+function deleteOrder(id) {
+  if(!confirm('Supprimer cette commande ?')) return;
+  const orders = (DB.get('orders')||[]).filter(o=>o.id!==id);
+  DB.set('orders',orders);
+  showToast('Commande supprimée','info');
+  loadAdminDashData();
+}
+
+function updateOrderStatus(id, status) {
+  const orders = DB.get('orders')||[];
+  const idx = orders.findIndex(o=>o.id===id);
+  if(idx!==-1){ orders[idx].status=status; DB.set('orders',orders); }
+  showToast('Statut mis à jour','success');
+}
+
+function deleteUser(id) {
+  if(id===1){ showToast('Impossible de supprimer l\'admin principal','error'); return; }
+  if(!confirm('Supprimer cet utilisateur ?')) return;
+  const users = (DB.get('users')||[]).filter(u=>u.id!==id);
+  DB.set('users',users);
+  showToast('Utilisateur supprimé','info');
+  loadAdminDashData();
+}
+
+function deleteContact(id) {
+  const contacts = (DB.get('contacts')||[]).filter(c=>c.id!==id);
+  DB.set('contacts',contacts);
+  showToast('Message supprimé','info');
+  renderAdminContacts();
+}
+
+function openAddBlogModal() {
+  document.getElementById('blogTitle').value='';
+  document.getElementById('blogExcerpt').value='';
+  document.getElementById('blogContent').value='';
+  document.getElementById('blogIcon').value='🌿';
+  document.getElementById('addBlogModal').classList.remove('hidden');
+}
+
+function saveBlog(e) {
+  e.preventDefault();
+  const posts = DB.get('blog_posts')||[];
+  posts.unshift({
+    id: Date.now(),
+    title: document.getElementById('blogTitle').value,
+    category: document.getElementById('blogCategory').value,
+    icon: document.getElementById('blogIcon').value||'📰',
+    excerpt: document.getElementById('blogExcerpt').value,
+    content: document.getElementById('blogContent').value,
+    author: currentUser?currentUser.firstname+' '+currentUser.lastname:'Admin',
+    status: 'published',
+    date: new Date().toISOString().split('T')[0]
+  });
+  DB.set('blog_posts',posts);
+  closeModal('addBlogModal');
+  showToast('Article publié !','success');
+  renderBlog();
+  renderAdminBlog();
+}
+
+function deleteBlogPost(id) {
+  if(!confirm('Supprimer cet article ?')) return;
+  const posts = (DB.get('blog_posts')||[]).filter(p=>p.id!==id);
+  DB.set('blog_posts',posts);
+  showToast('Article supprimé','info');
+  renderBlog();
+  renderAdminBlog();
+}
+
+function saveProfile() {
+  const users = DB.get('users')||[];
+  const idx = users.findIndex(u=>u.id===currentUser.id);
+  if(idx!==-1){
+    users[idx].firstname = document.getElementById('profileFirstname').value;
+    users[idx].lastname = document.getElementById('profileLastname').value;
+    users[idx].email = document.getElementById('profileEmail').value;
+    users[idx].phone = document.getElementById('profilePhone').value;
+    users[idx].city = document.getElementById('profileCity').value;
+    DB.set('users',users);
+    currentUser = users[idx];
+    DB.set('currentUser',currentUser);
+    updateNavUser();
+    showToast('Profil mis à jour !','success');
+  }
+}
+
+function exportData(type, format) {
+  let data, filename;
+  if(type==='products') { data=getProducts(); filename='produits'; }
+  else { data=DB.get('orders')||[]; filename='commandes'; }
+  if(format==='csv') {
+    const headers = Object.keys(data[0]||{}).join(',');
+    const rows = data.map(r=>Object.values(r).map(v=>JSON.stringify(v||'')).join(',')).join('\n');
+    const blob = new Blob([headers+'\n'+rows],{type:'text/csv'});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=filename+'.csv'; a.click();
+    showToast('Export CSV généré !','success');
+  } else {
+    showToast('Export PDF : fonctionnalité disponible avec le backend PHP','info');
+  }
+}
+
+// ============================================================
+// CONTACT FORM
+// ============================================================
+function submitContact(e) {
+  e.preventDefault();
+  const inputs = e.target.querySelectorAll('input,select,textarea');
+  const contact = {
+    id: Date.now(),
+    name: inputs[0].value,
+    phone: inputs[1].value,
+    email: inputs[2].value,
+    subject: inputs[3].value,
+    message: inputs[4].value,
+    date: new Date().toISOString().split('T')[0]
+  };
+  const contacts = DB.get('contacts')||[];
+  contacts.push(contact);
+  DB.set('contacts',contacts);
+  showToast('Message envoyé ! Nous vous répondrons sous 24h. 📩','success');
+  e.target.reset();
+}
+
+// ============================================================
+// MODAL UTILS
+// ============================================================
+function showLoginModal(){ document.getElementById('loginModal').classList.remove('hidden'); }
+function showRegisterModal(){ document.getElementById('registerModal').classList.remove('hidden'); }
+function closeModal(id){ document.getElementById(id).classList.add('hidden'); }
+function closeAllModals(){ document.querySelectorAll('.overlay').forEach(m=>m.classList.add('hidden')); }
+document.querySelectorAll && document.addEventListener('click', function(e){
+  if(e.target.classList&&e.target.classList.contains('overlay')) closeAllModals();
+});
+
+// ============================================================
+// DASHBOARD TAB SWITCHING
+// ============================================================
+function switchDashTab(tabId, el) {
+  document.querySelectorAll('#page-dashboard .dash-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('#page-dashboard .dash-section').forEach(s=>s.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+
+function switchAdminTab(tabId, el) {
+  document.querySelectorAll('#page-admin .dash-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('#page-admin .dash-section').forEach(s=>s.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+
+// ============================================================
+// MOBILE MENU
+// ============================================================
+function openMobileMenu(){ document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMobileMenu(){ document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow=''; }
+
+// ============================================================
+// TOAST NOTIFICATIONS
+// ============================================================
+function showToast(msg, type='success') {
+  const icons = {success:'✅',error:'❌',info:'ℹ️'};
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${type}`;
+  toast.innerHTML = `<span>${icons[type]||'📢'}</span><span>${msg}</span>`;
+  document.getElementById('toastContainer').appendChild(toast);
+  setTimeout(()=>{ toast.style.animation='fadeOut .3s ease forwards'; setTimeout(()=>toast.remove(),300); },3500);
+}
+
+// ============================================================
+// ANIMATIONS
+// ============================================================
+function animateCounters() {
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const target = parseInt(el.getAttribute('data-count'));
+    let current = 0;
+    const step = target/60;
+    const timer = setInterval(()=>{
+      current = Math.min(current+step, target);
+      el.textContent = Math.floor(current).toLocaleString();
+      if(current>=target) clearInterval(timer);
+    },25);
+  });
+}
+
+function observeFadeIns() {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  },{threshold:0.1});
+  document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+}
+</script>
+</body>
+</html>
